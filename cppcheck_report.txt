@@ -1,0 +1,149 @@
+TF_Integration.example.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+TinyFrame.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+TinyFrame.c:335:30: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_TypeListener_ *lst;
+                             ^
+TinyFrame.c:357:33: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_GenericListener_ *lst;
+                                ^
+TinyFrame.c:378:28: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_IdListener_ *lst;
+                           ^
+TinyFrame.c:396:30: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_TypeListener_ *lst;
+                             ^
+TinyFrame.c:414:33: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_GenericListener_ *lst;
+                                ^
+TinyFrame.c:531:28: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_IdListener_ *lst;
+                           ^
+TinyFrame.c:832:13: style: The scope of the variable 'b' can be reduced. [variableScope]
+    uint8_t b = 0;
+            ^
+TinyFrame.c:903:14: style: The scope of the variable 'chunk' can be reduced. [variableScope]
+    uint32_t chunk;
+             ^
+TinyFrame.c:1064:28: style: The scope of the variable 'lst' can be reduced. [variableScope]
+    struct TF_IdListener_ *lst;
+                           ^
+TinyFrame.c:775:15: style: Variable 'b' is assigned a value that is never used. [unreadVariable]
+    uint8_t b = 0;
+              ^
+TinyFrame.c:832:15: style: Variable 'b' is assigned a value that is never used. [unreadVariable]
+    uint8_t b = 0;
+              ^
+TinyFrame.c:853:15: style: Variable 'si' is assigned a value that is never used. [unreadVariable]
+    int8_t si = 0; // signed small int
+              ^
+TinyFrame.c:854:15: style: Variable 'b' is assigned a value that is never used. [unreadVariable]
+    uint8_t b = 0;
+              ^
+demo/demo.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/demo.c:222:9: error: Memory leak: stack [memleak]
+        return;
+        ^
+demo/demo.c:226:1: error: Memory leak: stack [memleak]
+}
+^
+demo/demo.c:114:13: style: The scope of the variable 'n' can be reduced. [variableScope]
+    ssize_t n;
+            ^
+demo/simple/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/simple_custom_cksum/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/simple_custom_cksum/test.c:48:25: style: Variable 'longstr' is assigned a value that is never used. [unreadVariable]
+    const char *longstr = "Lorem ipsum dolor sit amet.";
+                        ^
+demo/simple_long_payload/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/simple_multipart/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/socket_demo/master.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/socket_demo/slave.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+demo/utils.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+TinyFrame.c:248:0: style: The function 'TF_DeInit' is never used. [unusedFunction]
+
+^
+TinyFrame.c:1030:0: style: The function 'TF_QuerySimple_Multipart' is never used. [unusedFunction]
+
+^
+TinyFrame.c:1035:0: style: The function 'TF_Query_Multipart' is never used. [unusedFunction]
+
+^
+TinyFrame.c:411:0: style: The function 'TF_RemoveGenericListener' is never used. [unusedFunction]
+
+^
+TinyFrame.c:375:0: style: The function 'TF_RemoveIdListener' is never used. [unusedFunction]
+
+^
+TinyFrame.c:393:0: style: The function 'TF_RemoveTypeListener' is never used. [unusedFunction]
+
+^
+TinyFrame.c:528:0: style: The function 'TF_RenewIdListener' is never used. [unusedFunction]
+
+^
+TinyFrame.c:1041:0: style: The function 'TF_Respond_Multipart' is never used. [unusedFunction]
+
+^
+TinyFrame.c:1025:0: style: The function 'TF_SendSimple_Multipart' is never used. [unusedFunction]
+
+^
+TinyFrame.c:1061:0: style: The function 'TF_Tick' is never used. [unusedFunction]
+
+^
+utilities/payload_builder.c:10:0: style: The function 'pb_buf' is never used. [unusedFunction]
+
+^
+utilities/payload_builder.c:97:0: style: The function 'pb_float' is never used. [unusedFunction]
+
+^
+utilities/payload_builder.c:85:0: style: The function 'pb_i16' is never used. [unusedFunction]
+
+^
+utilities/payload_builder.c:91:0: style: The function 'pb_i32' is never used. [unusedFunction]
+
+^
+utilities/payload_builder.c:21:0: style: The function 'pb_string' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:113:0: style: The function 'pp_buf' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:93:0: style: The function 'pp_float' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:81:0: style: The function 'pp_i16' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:87:0: style: The function 'pp_i32' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:8:0: style: The function 'pp_skip' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:99:0: style: The function 'pp_string' is never used. [unusedFunction]
+
+^
+utilities/payload_parser.c:59:0: style: The function 'pp_tail' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
